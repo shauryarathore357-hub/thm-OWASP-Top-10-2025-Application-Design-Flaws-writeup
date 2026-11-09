@@ -43,7 +43,7 @@ Each category has a small vulnerable web app on the target machine (each on its 
 
 **Challenge prompt:** *"Navigate to `10.48.172.238:5002`. It appears that the developers left too many traces in their User Management APIs."*
 
-The hint points at **debug output**. The User Management API exposes users by ID, so the thing to try is requesting a user with an ID the server doesn't expect. Instead of a number, I passed text:
+The hint points at **debug output**. The User Management API exposes users by ID, so the thing to try is requesting a user with an ID the server doesn't expect. Instead of a number, I passed text :
 
 ```text
 http://10.48.172.238:5002/api/user/abc
